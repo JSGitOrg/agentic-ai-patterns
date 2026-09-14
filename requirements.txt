@@ -1,0 +1,14 @@
+# Core -- needed for every pattern. LLM_PROVIDER=mock (the default) works
+# fully offline with nothing else installed below.
+python-dotenv>=1.0
+
+# Only needed if you set LLM_PROVIDER=openai
+openai>=1.40
+
+# Only needed if you set LLM_PROVIDER=anthropic
+anthropic>=0.34
+
+# Only needed for pattern 06 (agent-to-agent over HTTP) and the capstone
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27
